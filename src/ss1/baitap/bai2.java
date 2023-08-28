@@ -6,7 +6,7 @@ public class bai2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nháº­p sá»‘ nguyÃªn dÆ°Æ¡ng: ");
+        System.out.print("Nhập số nguyên dương: ");
         int number = scanner.nextInt();
         System.out.println(convertNumberToWords(number));
     }
@@ -15,7 +15,7 @@ public class bai2 {
         if (number == 0) {
             return "Zero";
         } else if (number < 0) {
-            return "Sá»‘ Ã¢m khÃ´ng Ä‘Æ°á»£c há»— trá»£";
+            return "Số âm không được hỗ trợ";
         }
 
         String[] ones = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
