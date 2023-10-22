@@ -1,4 +1,6 @@
-package ss16.baitap;
+package ss16.baitap.Read_file;
+
+import ss16.baitap.Read_file.Country;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -14,10 +16,11 @@ public class Main {
         try {
             String line;
             try {
-                br = new BufferedReader(new FileReader("D:\\codegym\\module2_a05\\src\\ss16\\baitap\\country.csv"));
+                br = new BufferedReader(new FileReader("D:\\codegym\\module2_a05\\src\\ss16\\baitap\\Read_file\\country.csv"));
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
+
             while ((line = br.readLine()) != null) {
                 printCountry(parseCsvLine(line));
             }
@@ -32,14 +35,6 @@ public class Main {
                 e.printStackTrace();
             }
         }
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("nhập id");
-        int id = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhập code ");
-        String code = scanner.nextLine();
-        System.out.println("Nhập tên ");
-        String name = scanner.nextLine();
-        Country country = new Country(id , code , name);
     }
 
     public static List<String> parseCsvLine(String csvLine) {
@@ -52,8 +47,6 @@ public class Main {
         }
         return result;
     }
-
-
 
     private static void printCountry(List<String> country) {
         System.out.println(

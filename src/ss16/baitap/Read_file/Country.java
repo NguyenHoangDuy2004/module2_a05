@@ -1,9 +1,9 @@
-package ss16.baitap;
+package ss16.baitap.Read_file;
 
 public class Country {
-    private int id ;
-    private String code ;
-    private String name ;
+    private int id;
+    private String code;
+    private String name;
 
     public Country() {
     }
@@ -40,10 +40,7 @@ public class Country {
 
     @Override
     public String toString() {
-        return "Country{" +
-                "id=" + id +
-                ", code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+        return id + ", " + code + ", " + name;
     }
+
 }

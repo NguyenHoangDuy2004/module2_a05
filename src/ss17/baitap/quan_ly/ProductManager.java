@@ -1,4 +1,4 @@
-package ss17.baitap;
+package ss17.baitap.quan_ly;
 
 import java.io.Serializable;
 
