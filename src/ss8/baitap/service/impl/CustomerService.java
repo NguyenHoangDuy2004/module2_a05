@@ -17,7 +17,7 @@ public class CustomerService implements ICustomerService {
        LinkedList<Customer> customers = customerRepository.getListCustomer();
         for (int i = 0; i < customers.size(); i++) {
             if (customers != null) {
-                System.out.println((1 + i) + "." + customers);
+                System.out.println((1 + i) + "." + customers.get(i));
             }
         }
     }

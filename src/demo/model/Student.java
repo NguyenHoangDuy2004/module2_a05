@@ -1,16 +1,16 @@
-package demo;
+package demo.model;
 
-public class Person {
+public class Student {
     private double id;
     private String name;
     private String birthday ;
     private String gender ;
     private long   phone ;
 
-    public Person() {
+    public Student() {
     }
 
-    public Person(double id, String name, String birthday, String gender, long phone) {
+    public Student(double id, String name, String birthday, String gender, long phone) {
         this.id = id;
         this.name = name;
         this.birthday = birthday;
@@ -56,5 +56,16 @@ public class Person {
 
     public void setPhone(long phone) {
         this.phone = phone;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id =" + id +
+                ", name ='" + name + '\'' +
+                ", birthday ='" + birthday + '\'' +
+                ", gender ='" + gender + '\'' +
+                ", phone= " + phone +
+                '}';
     }
 }
