@@ -1,10 +1,10 @@
-package ss13.baitap;
+package ss11.baitap;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Palindrome {
+public class Palidrome {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Queue<Character> queue = new LinkedList<>();
@@ -23,5 +23,4 @@ public class Palindrome {
             System.out.println("This string: is NOT a palindrome");
         }
     }
-
 }

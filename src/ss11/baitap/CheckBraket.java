@@ -1,8 +1,8 @@
-package ss13.baitap;
+package ss11.baitap;
 
 import java.util.Stack;
 
-public class CheckBracket {
+public class CheckBraket {
     public static boolean checkBracket(String expression) {
         Stack<Character> stack = new Stack<>();
         Character[] closeBracket = {')', ']', '}'};

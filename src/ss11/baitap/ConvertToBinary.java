@@ -1,9 +1,9 @@
-package ss13.baitap;
+package ss11.baitap;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class CovertToBinary     {
+public class ConvertToBinary {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int input = Integer.parseInt(scanner.nextLine());
