@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉnh sửa đơn hàng</title>
+</head>
+<body>
+<h2>Edit Product</h2>
+
+<form th:action="@{/donhang/edit}" method="post">
+    <input type="hidden" th:value="${donHang.id}" name="id">
+
+    <div>
+        <label for="ngayMua">Ngày mua:</label>
+        <input type="date" id="ngayMua" name="ngayMua" th:value="${donHang.ngayMua}">
+    </div>
+
+    <div>
+        <label for="soLuong">Số lượng:</label>
+        <input type="number" id="soLuong" name="soLuong" th:value="${donHang.soLuong}">
+    </div>
+
+    <div>
+        <label for="sanPham">Loại sản phẩm:</label>
+        <select id="sanPham" name="sanPhamId">
+            <option th:each="sanPham : ${sanPhams}"
+                    th:value="${sanPham.id}"
+                    th:text="${sanPham.description}"
+                    th:selected="${sanPham.id == donHang.sanPham.id}">
+            </option>
+        </select>
+    </div>
+
+    <div>
+        <button type="submit">Update Don Hang</button>
+    </div>
+</form>
+
+<a href="/donhang">Back to Product List</a>
+</body>
+</html>
